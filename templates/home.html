@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+<!--{%load static%}-->
+
+{% block content%}
+{%for post in object_list%}
+<div>
+    <h3><a href = " "><i>{{post.title}}</i></a></h3>
+        <p><b>{{post.body}}</b></p>
+</div>
+{%endfor%}
+{%endblock content%}
